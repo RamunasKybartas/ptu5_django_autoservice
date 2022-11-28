@@ -1,0 +1,11 @@
+{% extends 'autoservice/base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Creating new order in" %} {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>{% if action %}{{ action }}{% else %}{% trans "Create new" %}{% endif %} {% trans "order" %}</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p><button type="submit">{% if action %}{{ action }}{% else %}{% trans "Create" %}{% endif %}</button></p>
+    </form>
+{% endblock content %}

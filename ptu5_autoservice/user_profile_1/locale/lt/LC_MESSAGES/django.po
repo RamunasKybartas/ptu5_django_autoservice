@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-11-23 16:05+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
+"11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
+"1 : n % 1 != 0 ? 2: 3);\n"
+
+#: .\user_profile_1\models.py:9
+msgid "user"
+msgstr "vartotojas"
+
+#: .\user_profile_1\models.py:13
+msgid "photo"
+msgstr "nuotrauka"
+
+#: .\user_profile_1\templates\registration\logged_out.html:3
+msgid "Logged out from"
+msgstr "Atsijungta iš"
+
+#: .\user_profile_1\templates\registration\logged_out.html:5
+msgid "Logged out"
+msgstr "Atsijungta"
+
+#: .\user_profile_1\templates\registration\logged_out.html:6
+msgid "Session closed successfully."
+msgstr "Sesija uždaryta sėkmingai."
+
+#: .\user_profile_1\templates\registration\logged_out.html:6
+msgid "Log in again"
+msgstr "Prisijungti iš naujo"
+
+#: .\user_profile_1\templates\registration\login.html:3
+msgid "Login to"
+msgstr "Prisijungti prie"
+
+#: .\user_profile_1\templates\registration\login.html:5
+msgid "Login to Autoservice"
+msgstr "Prisijungti prie Autoserviso"
+
+#: .\user_profile_1\templates\registration\login.html:7
+msgid "Login error, please try again."
+msgstr "Prisijungimo klaida, bandykite dar kartą."
+
+#: .\user_profile_1\templates\registration\login.html:11
+msgid "Permission error. You need a permission to see this page."
+msgstr "Leidimo klaida. Jums nesuteiktas leidimas matyti šį puslapį."
+
+#: .\user_profile_1\templates\registration\login.html:18
+msgid "Username"
+msgstr "Vartotojo vardas"
+
+#: .\user_profile_1\templates\registration\login.html:22
+msgid "Password"
+msgstr "Slaptažodis"
+
+#: .\user_profile_1\templates\registration\login.html:28
+msgid "Login"
+msgstr "Prisijungti"
+
+#: .\user_profile_1\templates\registration\login.html:34
+msgid "Forgot password?"
+msgstr "Pamiršau slaptažodį"
+
+#: .\user_profile_1\templates\registration\password_reset_complete.html:3
+#: .\user_profile_1\templates\registration\password_reset_complete.html:5
+msgid "Password reset successful"
+msgstr "Slaptažodis atnaujintas sėkmingai."
+
+#: .\user_profile_1\templates\registration\password_reset_complete.html:6
+msgid "You can"
+msgstr "Jūs galite"
+
+#: .\user_profile_1\templates\registration\password_reset_complete.html:6
+msgid "log in"
+msgstr "prisijungti"
+
+#: .\user_profile_1\templates\registration\password_reset_complete.html:6
+msgid "now"
+msgstr "dabar"
+
+#: .\user_profile_1\templates\registration\password_reset_confirm.html:3
+msgid "Password reset form"
+msgstr "Slaptažodio atnaujinimo forma"
+
+#: .\user_profile_1\templates\registration\password_reset_confirm.html:5
+msgid "Reset Password"
+msgstr "Išsaugoti naują slaptažodį"
+
+#: .\user_profile_1\templates\registration\password_reset_confirm.html:10
+msgid "Reset password"
+msgstr "Išsaugoti naują slaptažodį"
+
+#: .\user_profile_1\templates\registration\password_reset_confirm.html:13
+msgid "Error: Bad link. Please request"
+msgstr "Klaida: bloga nuoroda. Prašykite"
+
+#: .\user_profile_1\templates\registration\password_reset_confirm.html:13
+msgid "password reset"
+msgstr "slaptažodžio atnaujinimo"
+
+#: .\user_profile_1\templates\registration\password_reset_confirm.html:13
+msgid "again"
+msgstr "dar kartą"
+
+#: .\user_profile_1\templates\registration\password_reset_done.html:3
+#: .\user_profile_1\templates\registration\password_reset_done.html:5
+msgid "Password reset email sent"
+msgstr "Slaptažodio atnaujinimo forma"
+
+#: .\user_profile_1\templates\registration\password_reset_done.html:6
+msgid "We have sent you an email with password reset link for your account."
+msgstr "Mes jums išsiuntinėme elektroninį laišką su nuoroda."
+
+#: .\user_profile_1\templates\registration\password_reset_email.html:2
+msgid "Hi! Someone has requested to reset your password. You can do so here:"
+msgstr "Sveiki! "

@@ -1,0 +1,34 @@
+{% extends 'autoservice/base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Order" %} {{ object }} {% trans "in" %} {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>{% trans "Order #" %}{{ object.id }}</h1>
+<p>{% trans "Date:" %} {{ object.order_date }}</p>
+<p>{% trans "Status:" %} {{ object.get_status_display }}, {% trans "estimated:" %} {{ object.due_back }}</p>
+<p>{% trans "Car:" %} {{ object.car }}</p>
+<p>{% trans "Total price:" %} {{ object.total_amount }} €</p>
+<ul>
+    {% for line in object.order_lines.all %}
+        <li>{{ line }}</li>
+    {% endfor %}
+</ul>
+<h2>{% trans "Comments" %}</h2>
+{% if user.is_authenticated %}
+    <div class='review_form'>
+        <p>{% trans "Please leave a comment about your own order." %}</p>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <p><button type="submit">{% trans "Post comment" %}</button></p>
+        </form>
+    </div>
+{% endif %}
+{% if order.reviews %}
+    {% for review in order.reviews.all %}
+        <div class='order_review'>
+            <h4>{{ review.reviewer }}<span class='float_right'>{{ review.created_at }}</span></h4>
+            <p>{{ review.content }}</p>
+        </div>
+    {% endfor %}
+{% endif %}
+{% endblock content %}

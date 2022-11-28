@@ -1,0 +1,13 @@
+{% extends 'autoservice/base.html' %}
+{% load i18n %}
+{% block title %}{{ object }}{{ block.super }}{% endblock title %}
+{% block content %}
+    <h1>{% trans "Car info:" %}</h1>
+    <p>{% trans "Owner:" %} {{object.client}}</p>
+    <p>{% trans "Car Model:" %} {{object.car_model}}</p>
+    <p>{% trans "License Plate Number:" %} {{object.license_plate_number}}</p>
+    <p>{% trans "VIN Code:" %} {{object.vin_code}}</p>
+    <div class='description'>
+        {{ object.description|safe }}
+    </div>
+{% endblock content %}

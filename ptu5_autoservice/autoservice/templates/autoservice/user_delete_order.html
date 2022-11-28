@@ -1,0 +1,14 @@
+{% extends 'autoservice/base.html' %}
+{% load i18n %}
+{% block title %}{% trans "cancelling order in" %} {{ block.super }}{% endblock title %}
+{% block content %}
+<h1>{% trans "Cancelling order" %}</h1>
+    <form method="post" action="">
+    {% csrf_token %}
+    <p>{% trans "Are you sure you want to cancel this order" %} {{ object.order.car }}?</p>
+    <p>
+        <button type="submit">{% trans "YES" %}</button>
+        <a href="{% url 'user_orders' %}" class="button">{% trans "NO" %}</a>
+    </p>
+    </form>
+{% endblock content %}

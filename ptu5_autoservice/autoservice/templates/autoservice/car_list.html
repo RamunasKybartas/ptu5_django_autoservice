@@ -1,0 +1,17 @@
+{% extends 'autoservice/base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Cars in" %} {{ block.super }}{% endblock title %}
+{% block content %}
+    <h1>{% trans "Cars Serviced" %}</h1>
+    {% with car_list as page_obj %}
+        {% include 'autoservice/includes/paginator_search.html' %}
+    {% endwith %}
+    <ul>
+    {% for car_object in car_list %}
+        <li><a href="{% url 'car' car_object.pk %}">{{ car_object }}</a></li>
+    {% endfor %}
+    </ul>
+    {% with car_list as page_obj %}
+        {% include 'autoservice/includes/paginator.html' %}
+    {% endwith %}
+{% endblock content %}
