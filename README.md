@@ -1,1 +1,1 @@
-# ptu5_django_autoservice
+# ptu5_django_uzduotis_autoservice
